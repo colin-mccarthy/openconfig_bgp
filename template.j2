@@ -1,0 +1,4 @@
+ {% if neighOpts.route_reflector is not none -%}
+ {% set rr = neighOpts.route_reflector.config -%}
+ neighbor {{ rr.route_reflector_client }} route-reflector-client
+ {% endif -%}
